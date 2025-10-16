@@ -1,0 +1,11 @@
+name: Second Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  echo-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        run: echo "Hello from the second workflow!"
